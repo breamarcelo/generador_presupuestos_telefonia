@@ -1,0 +1,13 @@
+* {
+    -panel-background: rgb(244, 245, 249);
+    -card-background: rgb(252, 252, 252);
+    -selection-background: rgb(234, 237, 251);
+    -header-fill: rgb(2, 2, 2);
+    -main-font-fill: rgb(44, 44, 57);
+    -light-font-fill: rgb(106, 105, 114);
+    -btn-background: rgb(74, 95, 232);
+    -cancel-btn-background: rgb(232, 74, 95);
+    -btn-font-fill: rgb(249, 242, 252);
+    -even-row-background: rgb(241, 242, 251);
+    -action-btn-background: rgb(132, 77, 229);
+}

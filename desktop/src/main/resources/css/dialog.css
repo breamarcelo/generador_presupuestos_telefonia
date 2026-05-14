@@ -1,0 +1,86 @@
+.dialog {
+    -fx-background-color: -card-background;
+    -fx-pref-width: 400;
+    -fx-padding: 20;
+}
+
+GridPane {
+    -fx-background-color: transparent;
+    -fx-hgap: 10;
+}
+
+Label {
+    -fx-text-fill: -light-font-fill;
+}
+
+TextField {
+    -fx-background-color: transparent;
+    -fx-border-color: -light-font-fill;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: -light-font-fill;
+    -fx-pref-height: 20;
+    -fx-translate-x: -5;
+}
+
+Button {
+    -fx-background-color: -btn-background;
+    -fx-text-fill: -btn-font-fill;
+    -fx-font-weight: bold;
+    -fx-border-style: none;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5;
+    -fx-pref-width: 100;
+}
+
+Button:hover {
+    -fx-opacity: 0.7;
+}
+
+.cancel-btn {
+    -fx-background-color: -cancel-btn-background;
+}
+
+.empty-field {
+    -fx-border-color: -cancel-btn-background;
+    -fx-prompt-text-fill: -cancel-btn-background;
+}
+
+ListView {
+    -fx-background-color: none;
+    -fx-pref-height: 80;
+    -fx-padding: 0;
+}
+
+ListView .list-cell {
+    -fx-text-fill: -light-font-fill;
+}
+
+ListView .list-cell:odd {
+    -fx-background-color: -selection-background;
+}
+
+ListView .list-cell:even {
+    -fx-background-color: -even-row-background;
+}
+
+ListView .list-cell:hover,
+ListView .list-cell:selected {
+    -fx-background-color: -btn-background;
+    -fx-text-fill: -btn-font-fill;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: -selection-background;
+}
+
+.scroll-bar .decrement-button,
+.scroll-bar .increment-button {
+    -fx-background-color: -selection-background;
+    -fx-text-fill: -light-font-fill;
+}

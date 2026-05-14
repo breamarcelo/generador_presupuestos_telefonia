@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@capacitor-community/http/dist/esm/index.js"],
+  "sourcesContent": ["import { registerPlugin } from '@capacitor/core';\nconst Http = registerPlugin('Http', {\n    web: () => import('./web').then(m => new m.HttpWeb()),\n    electron: () => import('./web').then(m => new m.HttpWeb()),\n});\nexport * from './definitions';\nexport { Http };\n"],
+  "mappings": ";;;;;;AACA,IAAM,OAAO,eAAe,QAAQ;AAAA,EAChC,KAAK,MAAM,OAAO,mBAAO,EAAE,KAAK,OAAK,IAAI,EAAE,QAAQ,CAAC;AAAA,EACpD,UAAU,MAAM,OAAO,mBAAO,EAAE,KAAK,OAAK,IAAI,EAAE,QAAQ,CAAC;AAC7D,CAAC;",
+  "names": []
+}

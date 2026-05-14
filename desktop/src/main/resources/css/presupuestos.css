@@ -1,0 +1,195 @@
+.gridpane {
+    -fx-padding: 20;
+    -fx-vgap: 20;
+    -fx-hgap: 20;
+    -fx-background-insets: 0;
+    -fx-background-color: -panel-background;
+}
+
+VBox {
+    -fx-border-style: none;
+    -fx-background-radius: 5;
+    -fx-padding: 20;
+    -fx-background-color: -card-background;
+}
+
+Label {
+    -fx-text-fill: -main-font-fill;
+}
+
+.VBox-Label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -header-fill;
+}
+
+ComboBox {
+    -fx-pref-height: 20;
+    -fx-background-color: -selection-background;
+    -fx-border-style: none;
+    -fx-background-radius: 5;
+}
+
+ComboBox .arrow {
+    -fx-background-color: -light-font-fill;
+}
+
+ComboBox .list-view {
+    -fx-background-color: -selection-background;
+    -fx-border-style: none;
+    -fx-background-radius: 5;
+}
+
+ComboBox .list-cell {
+    -fx-background-color: -selection-background;
+    -fx-background-radius: 5;
+    -fx-text-fill: -light-font-fill;
+}
+
+ComboBox .list-cell:hover {
+    -fx-background-color: -panel-background;
+}
+
+Button {
+    -fx-background-color: -btn-background;
+    -fx-text-fill: -btn-font-fill;
+    -fx-font-weight: bold;
+    -fx-border-style: none;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5;
+    -fx-pref-width: 100;
+}
+
+Button:hover {
+    -fx-opacity: 0.7;
+}
+
+#presupuestos_title {
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+}
+
+#total_label {
+    -fx-alignment: center-right;
+    -fx-font-weight: bold;
+    -fx-translate-y: 0;
+}
+
+.view_id {
+    -fx-pref-width: 10;
+}
+
+.view_label {
+    -fx-alignment: center-left;
+    -fx-pref-height: 30;
+}
+
+.view_label,
+.view_qt {
+    -fx-translate-y: -0.5;
+}
+
+.view_btn,
+.view_qt {
+    -fx-alignment: center;
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+}
+
+.view_btn {
+    -fx-padding: 0;
+}
+
+ListView {
+    -fx-background-color: none;
+}
+
+ListView .list-cell:odd {
+    -fx-background-color: -selection-background;
+}
+
+ListView .list-cell:even {
+    -fx-background-color: -even-row-background;
+}
+
+HBox {
+    -fx-background-insets: 0;
+    -fx-pref-height: 30;
+    -fx-padding: 0;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: -selection-background;
+}
+
+.scroll-bar .decrement-button,
+.scroll-bar .increment-button {
+    -fx-background-color: -selection-background;
+    -fx-text-fill: -light-font-fill;
+}
+
+TableView {
+    -fx-background-color: none;
+}
+
+TableView .column-header {
+    -fx-background-color: -selection-background;
+    -fx-text-fill: -main-font-fill;
+    -fx-font-weight: bold;
+}
+
+TableView .column {
+    -fx-background-color: -selection-background;
+}
+
+TableView .cell {
+    -fx-text-fill: -light-font-fill;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+TableView .cell:even {
+    -fx-background-color: -even-row-color;
+}
+
+TableView .cell:odd {
+    -fx-background-color: -selection-background;
+}
+
+TableView .cell>ListView .list-cell {
+    -fx-background-color: transparent;
+}
+
+TextField {
+    -fx-background-color: transparent;
+    -fx-border-color: -light-font-fill;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: -light-font-fill;
+    -fx-pref-height: 20;
+}
+
+.menu-bar {
+    -fx-pref-height: 60;
+    -fx-background-insets: 5;
+    -fx-padding: 20;
+    -fx-background-color: -card-background;
+    -fx-background-radius: 5;
+}
+
+.menu-bar>TextField {
+    -fx-alignment: bottom-right;
+    -fx-border-color: -light-font-fill;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-alignment: center-left;
+}
+
+.action-btn {
+    -fx-background-color: -action-btn-background;
+}
