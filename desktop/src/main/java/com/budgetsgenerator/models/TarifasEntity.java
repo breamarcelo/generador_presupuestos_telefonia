@@ -47,8 +47,8 @@ public class TarifasEntity {
     @JoinColumn(name="FK_Servicios_ID")
     private ServiciosAdicionalesEntity serviciosAdicionales;
 
-    @OneToOne(mappedBy="tarifa")
-    private PresupuestosEntity presupuesto;
+    @OneToMany(mappedBy="tarifa")
+    private List<PresupuestosEntity> presupuesto;
 
     @Column(name="Tv")
     private boolean tv;

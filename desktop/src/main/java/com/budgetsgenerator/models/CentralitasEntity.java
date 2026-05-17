@@ -1,11 +1,13 @@
 package com.budgetsgenerator.models;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,8 +24,8 @@ public class CentralitasEntity {
     @Column(name="Precio")
     private double precio;
 
-    @OneToOne(mappedBy="centralita")
-    private PresupuestosEntity presupuesto;
+    @OneToMany(mappedBy="centralita")
+    private List<PresupuestosEntity> presupuesto;
 
     public CentralitasEntity(){
     }

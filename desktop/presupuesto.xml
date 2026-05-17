@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Presupuesto>
+    <LineasPresupuesto>
+        <Linea>
+            <Cantidad>1</Cantidad>
+            <Descripcion>Tarifa Negocio Extra 1 línea
+1 línea móvil  con llamadas ilimitadas y Gb ilimitados
+Pack Negocio Extra 1 línea
+Fibra 1Gb
+</Descripcion>
+            <Importe>63.0</Importe>
+        </Linea>
+        <Linea>
+            <Cantidad>1</Cantidad>
+            <Descripcion>Descuento 10%
+</Descripcion>
+            <Importe>-6.3</Importe>
+        </Linea>
+        <Linea>
+            <Cantidad>2</Cantidad>
+            <Descripcion>Línea Smartphone Negocio Sin Límites
+</Descripcion>
+            <Importe>22.0</Importe>
+        </Linea>
+        <Linea>
+            <Cantidad>1</Cantidad>
+            <Descripcion>Roaming: llamadas y 60Gb en Zona Roaming UE.
+Llamadas internacionales: 200 min a fijos y móviles.
+Legálitas Protección Jurídica Negocios Orange.
+Cloud y Protección Dispositivos.
+1 beneficios a elegir para tu negocio.
+</Descripcion>
+            <Importe>0.0</Importe>
+        </Linea>
+    </LineasPresupuesto>
+    <Total>78.7</Total>
+</Presupuesto>

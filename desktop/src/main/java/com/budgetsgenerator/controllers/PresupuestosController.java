@@ -595,6 +595,7 @@ public class PresupuestosController {
     }
 
     public void loadPresupuestoDTO(PresupuestosDTO loaded) {
+        System.out.println(loaded.getLineasAdicionales());
         presupuesto = loaded;
         view.getTarifasCombo().setValue(loaded.getTarifa());
         view.getFibraCombo().getItems().clear();

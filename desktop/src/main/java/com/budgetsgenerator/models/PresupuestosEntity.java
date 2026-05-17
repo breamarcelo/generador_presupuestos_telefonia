@@ -9,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
@@ -24,7 +25,7 @@ public class PresupuestosEntity {
     @Column(name="Nombre")
     private String nombre;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="FK_Tarifas_ID")
     private TarifasEntity tarifa;
 
@@ -32,19 +33,19 @@ public class PresupuestosEntity {
     @JoinColumn(name="FK_Fibra_ID")
     private FibrasEntity fibra;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="FK_Streaming_ID")
     private StreamingEntity streaming;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="FK_Centralita_ID")
     private CentralitasEntity centralita;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="FK_PackFutbol_ID")
     private PacksFutbolEntity packFutbol;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="FK_Descuentos_ID")
     private DescuentosEntity descuento;
 

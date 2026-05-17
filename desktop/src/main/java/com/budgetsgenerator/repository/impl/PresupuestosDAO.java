@@ -26,7 +26,7 @@ public class PresupuestosDAO extends GenericDAOImpl<PresupuestosEntity, Integer,
         EntityManager em = JPAUtil.getEntityManager();
         try {
             return em.createQuery(
-                "SELECT t FROM PresupuestosEntity t LEFT JOIN FETCH t.lineasPresupuesto WHERE t.id = :id", 
+                "SELECT DISTINCT t FROM PresupuestosEntity t LEFT JOIN FETCH t.lineasPresupuesto WHERE t.id = :id", 
                 PresupuestosEntity.class)
                 .setParameter("id", id)
                 .getSingleResult();

@@ -41,6 +41,7 @@ public class PresupuestosService extends GenericServiceImpl<PresupuestosDTO, Pre
             List<LineasPresupuestoEntity> lineasPresupuestoEntitys = LineasPresupuestoMapper.getInstance().toEntityList(lineasPresupuesto, em);
             PresupuestosEntity savedEntity = presupuestosDAO.savePresupuesto(presupuestosEntity, lineasPresupuestoEntitys, em);
             em.getTransaction().commit();
+            
             return PresupuestosMapper.getInstance().toDTO(savedEntity, em);
         } catch (Exception e) {
             if(em.getTransaction().isActive()) {
