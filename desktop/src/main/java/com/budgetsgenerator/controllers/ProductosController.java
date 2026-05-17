@@ -316,5 +316,9 @@ public class ProductosController {
         view.getCentralitasPrecioTextField().setText("");
         view.getPacksFutbolNombreTextField().setText("");
         view.getPacksFutbolPrecioTextField().setText("");
+        view.getStreamingListView().setSelectionModel(null);
+        view.getDescuentosListView().setSelectionModel(null);
+        view.getPacksFutbolListView().setSelectionModel(null);
+        view.getCentralitasListView().setSelectionModel(null);
     }
 }

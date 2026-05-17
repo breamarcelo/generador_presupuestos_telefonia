@@ -290,7 +290,7 @@ public class PresupuestosController {
                     PresupuestosDTO nuevoPresupuesto = new PresupuestosDTO();
                     List<LineasPresupuestoDTO> nuevaListaLineas = new ArrayList<>();
                     nuevaListaLineas.addAll(lineasPresupuestoList);
-                    nuevoPresupuesto.setId(null);
+                    nuevoPresupuesto.setId(0);
                     nuevoPresupuesto.setNombre(dialog.getEditor().getText());
                     nuevoPresupuesto.setTarifa(view.getTarifasCombo().getValue());
                     nuevoPresupuesto.setFibra(view.getFibraCombo().getValue());
